@@ -126,9 +126,29 @@ async function arrayToTable() {
     </tr>`;
     $("#completedTable").append(rowFinal);
     purgeTableContent();
-    document.getElementById("switch").disabled = true;
+    document.getElementById("showTable").disabled = true;
   }
 }
+
+/*-------------------------*/
+
+async function purgeListContent() {
+  document.getElementById("switchLista").addEventListener("click", function () {
+    $("ul").remove();
+    document.getElementById("switch").disabled = false;
+  });
+}
+
+async function purgeTableContent() {
+  document
+    .getElementById("contentTabel")
+    .addEventListener("click", function () {
+      $("td").remove();
+      document.getElementById("showTable").disabled = false;
+    });
+}
+
+/*------------------------------------------*/
 /*-------------------------populare lista din array cu numele filmelor folosind datele din api-----------------*/
 async function arrayToList() {
   let movieNames = [];
@@ -154,26 +174,9 @@ async function arrayToList() {
   });
   movieNames.concat(films);
 
+  purgeListContent();
   document.getElementById("switch").disabled = true;
 }
-/*------------------------------------------*/
-
-async function purgeListContent() {
-  document.getElementById("switchLista").addEventListener("click", function () {
-    $("ul").remove();
-    document.getElementById("switch").disabled = false;
-  });
-}
-
-async function purgeTableContent() {
-  document
-    .getElementById("contentTabel")
-    .addEventListener("click", function () {
-      $("td").remove();
-      document.getElementById("switch").disabled = false;
-    });
-}
-
 /*------------------------------------------*/
 
 async function addMovieIntoBrowser() {
