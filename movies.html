@@ -39,40 +39,27 @@
 
           <label for="rating">Rating:</label>
           <input type="text" id="frating" name="frating" /><br /><br />
-
-          <button
-            type="button"
-            id="buttonInsert"
-            onclick="addMovieIntoBrowser()"
-          >
-            Adauga film
-          </button>
+          <button type="button" id="insert">Adauga film</button>
         </form>
       </div>
 
       <div id="movie-list">
-        <!------------------------------------ ss -->
         <button type="button" onclick="arrayToList()" id="switch">
           Lista filmelor introduse
         </button>
-        <!------------------------------------ ss -->
-        <button type="button" onclick="purgeListContent()" id="switchLista">
+        <button type="button" id="switchLista" style="display: none">
           Inchide lista
         </button>
-        <!------------------------------------ ss -->
       </div>
     </div>
 
     <div class="section-two">
-      <!------------------------------------ ss -->
       <button type="button" onclick="arrayToTable()" id="showTable">
         Afisare detalii filme
       </button>
-      <!------------------------------------ ss -->
-      <button type="button" onclick="purgeTableContent()" id="contentTabel">
+      <button type="button" id="contentTabel" style="display: none">
         Inchide tabelul
       </button>
-      <!------------------------------------ ss -->
       <table id="completedTable">
         <tr id="table-rows">
           <th data-column="name">Nume</th>

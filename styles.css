@@ -6,6 +6,11 @@
     list-style-type: none;
   }
 
+  body{
+    background-color: rgba(42,46,55,255);
+}
+
+
   button{
     background-color: #E50914; 
     border: none;
@@ -15,7 +20,7 @@
     text-decoration: none;
     display: block;
     margin: 0 auto; 
-    font-size: 15px;
+    font-size: 25px;
     border-radius: 25px;  
   }
 
@@ -24,49 +29,43 @@
     cursor: pointer;
   }
 
-#main
-{
-    width: 700px;
-    height: 500px;
-    background-color: rgb(47,54,62,255) ;
-    color: aliceblue;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 15px ;
+  #main
+  {
+      width: 700px;
+      height: 500px;
+      background-color: rgb(47,54,62,255) ;
+      color: aliceblue;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border-radius: 15px ;
 
-}
+  }
 
- #title
- {
-    padding-top: 20px;
-    text-align:center;
-    font-size: 45px;
-    color: aliceblue;
- } 
+  #title
+  {
+      padding-top: 20px;
+      text-align:center;
+      font-size: 45px;
+      color: aliceblue;
+  } 
 
- #description
- {
-    text-align: justify;
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    font-size: 20px;
-    
- }
+  #description
+  {
+      text-align: justify;
+      padding-top: 50px;
+      padding-right: 50px;
+      padding-bottom: 50px;
+      padding-left: 50px;
+      font-size: 20px;
+      
+  }
 
 
-body
-{
-    background-color: rgba(42,46,55,255);
-}
-.button-s{
-  font-size: 22px;
-}
+
   /*------------------loader---------------*/
   .loader-wrapper {
     width: 100%;
@@ -121,7 +120,18 @@ body
     text-align:center;
     overflow:hidden;
     color: aliceblue;
+    position:relative;
+    
  }
+  #switchLista{
+    position: absolute;
+    bottom:0;
+    width: 250px;
+    margin-left: 125px;
+    margin-bottom: 34px;
+    font-size: 20px;
+  }
+
 /*-------------div--------add-movie-form--------------------*/
 #movie-form {
   height: 100%;
@@ -178,9 +188,8 @@ body
   }
   #switch{
     padding: 15px;
-  font-size: 25px;
-  text-align: center;
-  /* margin: 10px; */
+    font-size: 25px;
+    text-align: center;
     margin: 20px auto;
   }
 
@@ -188,26 +197,12 @@ body
     padding: 10px;
     font-size: 20px;
     text-align: center;
-    /* display: block;
-      top:0;
-    bottom: 0;
-    left: 0;
-    right: 0; */
+
   }
 
-  /*
-  height: 580;
-    width: 500;
-     display: flex; 
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(47,54,62,255);
-    border-radius: 20px;
-}   
+ 
 
 /*-------------div--------movie-list--------------------*/
-
-
 
 .add-movie-form {
   
@@ -221,14 +216,27 @@ body
 
 }  
 
-
   /*--------------------------------SECOND SECTION--------------------------*/
 
  .section-two {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto; 
+  height: 800px;
+  position: relative;
  }
+
+ #contentTabel{
+ 
+    position: absolute;
+    bottom:0;
+    width: 250px;
+    margin-left: 810px;
+    margin-bottom: 34px;
+    font-size: 20px;
+    
+    
+  }
 
 /*--------------------tabel----------------*/
   
